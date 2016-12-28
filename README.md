@@ -5,7 +5,7 @@ Generates `edi ember g mu-resource ...` calls from a domain.lisp file by introsp
 ## Example usage
 
 ```
-    dr run -v `pwd`/config/resources:/config resources-generator
+    dr run -v `pwd`/config/resources:/config semtech/mu-cl-resources-ember-generator
 ```
 
 The last line of output contains the generate calls.  Run it and enjoy the new interface.
