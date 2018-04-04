@@ -28,5 +28,6 @@
     (funcall (find-symbol "BOOT" name))))
 (format t "~& >> docker finished loading boot ~%")
 
+(eval (read-from-string "(ql:register-local-projects)"))
 (eval (read-from-string "(ql:quickload :resources-generator)"))
 (eval (read-from-string "(resources-generator:generate-resources)"))
